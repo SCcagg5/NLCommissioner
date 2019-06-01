@@ -9,7 +9,7 @@
 ```
 ### `Dockerfile` comportement:
 
-the api's `dockerfile` is based on python3.7, at launch it:
+the api's `dockerfile` is based on python:3.7-alpine, at launch it:
  * installs needed packages from `back-end/requirements.txt` using `pip3`
  * loads ***ENV*** from `back-end/CONFIG`
 
@@ -35,7 +35,7 @@ if the `API_PORT` is change you must change it also into `docker-compose`
 Routes | Methods | Params | Return |
 -|-|-|-|
 `/compute_one/` | POST | pv, nb_clients |
-`/compute_multi/` | | POST | data |
+`/compute_multi/` | POST | data |
 
 ### Parameters
 
