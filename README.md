@@ -34,8 +34,8 @@ if the `API_PORT` is change you must change it also into `docker-compose`
 
 Routes | Methods | Params | Return |
 -|-|-|-|
-`/compute_one/` | POST | pv, nb_clients |
-`/compute_multi/` | POST | data |
+`/compute_one/` | POST | pv, nb_clients | gain and totalpv
+`/compute_multi/` | POST | data | gain and totalpv base on each cell of data 
 
 ### Parameters
 
